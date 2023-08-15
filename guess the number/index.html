@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.guessField {
+    padding: 5px;
+    width: 80px;
+}
+
+.guessSubmit {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.resultParas {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.guesses {
+    font-weight: bold;
+    color: #555;
+}
+
+.lastResult {
+    font-weight: bold;
+    color: #555;
+}
+
+.lowOrHi {
+    font-style: italic;
+    color: #999;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Number guessing game</h1>
+        <p>Try and guess a random between 1 and 100.</p>
+        <p>You have 10 attempts to guess the right number</p>
+        <br>
+        <form class="form">
+            <label for="guessField" id="guess">Guess a number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
+        </form>
+
+        <div class="resultParas">
+            <p>Previous Guesses: <span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
